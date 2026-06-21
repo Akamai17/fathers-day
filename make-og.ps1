@@ -57,15 +57,14 @@ $g.DrawString($chipText, $chipFont, $green, $chipRect, $sfMid)
 # --- title ---
 $sfCenter = New-Object System.Drawing.StringFormat
 $sfCenter.Alignment = [System.Drawing.StringAlignment]::Center
-$titleFont = New-Object System.Drawing.Font('Georgia', 72, [System.Drawing.FontStyle]::Bold)
+$titleFont = New-Object System.Drawing.Font('Georgia', 82, [System.Drawing.FontStyle]::Bold)
 $ink = New-Object System.Drawing.SolidBrush ([System.Drawing.ColorTranslator]::FromHtml('#2a1a14'))
-$g.DrawString("Happy Father's Day,", $titleFont, $ink, ($W / 2), 230, $sfCenter)
-$g.DrawString("Dad", $titleFont, $ink, ($W / 2), 330, $sfCenter)
+$g.DrawString("Happy Father's Day", $titleFont, $ink, ($W / 2), 270, $sfCenter)
 
 # --- subtitle ---
-$subFont = New-Object System.Drawing.Font('Georgia', 30, [System.Drawing.FontStyle]::Italic)
+$subFont = New-Object System.Drawing.Font('Georgia', 32, [System.Drawing.FontStyle]::Italic)
 $subBrush = New-Object System.Drawing.SolidBrush ([System.Drawing.ColorTranslator]::FromHtml('#b5642f'))
-$g.DrawString("made just for you   .   tap to open", $subFont, $subBrush, ($W / 2), 460, $sfCenter)
+$g.DrawString("tap to open", $subFont, $subBrush, ($W / 2), 410, $sfCenter)
 
 # --- save ---
 $out = 'C:\Users\Yuvan\fathers-day-gift\og.png'
